@@ -1,0 +1,31 @@
+name: Bug report
+description: Report a reproducible SkinShift problem
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options: [Chrome, Edge, Brave, Arc, Other Chromium browser]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: SkinShift version
+      placeholder: "0.7.0"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What happened, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: layout
+    attributes:
+      label: ChatGPT layout details
+      description: Include a screenshot if possible. Remove private chat content first.

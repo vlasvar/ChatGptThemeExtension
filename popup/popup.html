@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SkinShift</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header>
+      <img src="../assets/icon128.png" alt="" width="36" height="36">
+      <div>
+        <h1>SkinShift</h1>
+        <p>Make ChatGPT yours.</p>
+      </div>
+      <label class="switch" aria-label="Enable SkinShift">
+        <input id="enabled" type="checkbox">
+        <span></span>
+      </label>
+    </header>
+
+    <main>
+      <p class="eyebrow">Choose a theme</p>
+      <div id="themes" class="themes" aria-live="polite"></div>
+      <p id="status" class="status" role="status"></p>
+    </main>
+
+    <footer>
+      <span>Local-only · No tracking</span>
+      <a href="https://aislop.gr" target="_blank" rel="noreferrer">aislop.gr ↗</a>
+    </footer>
+
+    <template id="theme-template">
+      <button class="theme-card" type="button">
+        <span class="theme-preview"></span>
+        <span class="theme-copy">
+          <strong></strong>
+          <small></small>
+        </span>
+        <span class="check" aria-hidden="true">✓</span>
+      </button>
+    </template>
+    <script src="popup.js"></script>
+  </body>
+</html>
