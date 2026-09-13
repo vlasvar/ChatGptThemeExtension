@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Neon Vice mark">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffca73"/><stop offset=".5" stop-color="#ff65cf"/><stop offset="1" stop-color="#4edfff"/></linearGradient></defs>
+  <circle cx="32" cy="32" r="28" fill="#0c1025" stroke="#ff65cf" stroke-width="3"/>
+  <path d="M17 34h30M19 27h26M23 20h18M21 41h22" stroke="url(#g)" stroke-width="5" stroke-linecap="round"/>
+</svg>

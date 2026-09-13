@@ -1,15 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "GPT Theme",
-  "version": "0.6.3",
-  "description": "Visual themes for ChatGPT. Optional marks on pinned titles and project titles.",
+  "name": "SkinShift",
+  "short_name": "SkinShift",
+  "version": "0.7.0",
+  "description": "Open-source visual themes for ChatGPT. Local-only, with no tracking or backend.",
   "permissions": ["storage"],
   "host_permissions": [
     "https://chatgpt.com/*",
     "https://chat.openai.com/*"
   ],
   "action": {
-    "default_title": "GPT Theme",
+    "default_title": "SkinShift",
     "default_popup": "popup/popup.html",
     "default_icon": {
       "16": "assets/icon16.png",
@@ -35,7 +36,11 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["assets/*"],
+      "resources": [
+        "themes/themes.json",
+        "themes/*/*.webp",
+        "themes/*/*.svg"
+      ],
       "matches": [
         "https://chatgpt.com/*",
         "https://chat.openai.com/*"

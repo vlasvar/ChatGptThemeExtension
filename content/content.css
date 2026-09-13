@@ -1,187 +1,112 @@
 :root {
-  --va-blur: 20px;
-  --va-glow: 0.22;
-  --va-wallpaper-url: none;
-  --va-row-accent: #5ce1ff;
+  --ss-wallpaper: none;
+  --ss-accent: #62d9ff;
+  --ss-accent-soft: rgba(98, 217, 255, 0.22);
+  --ss-overlay: rgba(2, 5, 14, 0.42);
 }
 
-#va-cosmic-bg {
+#skinshift-backdrop {
   position: fixed;
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background-image:
-    linear-gradient(rgba(2, 4, 12, 0.16), rgba(2, 6, 16, 0.28)),
-    var(--va-wallpaper-url);
-  background-size: cover;
+  background-image: linear-gradient(var(--ss-overlay), var(--ss-overlay)), var(--ss-wallpaper);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-html.gpt-theme-enabled,
-html.gpt-theme-enabled.dark,
-html.gpt-theme-enabled body {
-  background: transparent !important;
+html.skinshift-enabled,
+html.skinshift-enabled body {
+  min-height: 100%;
+  background: #050811 !important;
+  color-scheme: dark;
   --sidebar-surface-primary: transparent !important;
   --main-surface-primary: transparent !important;
   --bg-primary: transparent !important;
-  --bg-elevated-secondary: transparent !important;
 }
 
-html.gpt-theme-enabled #stage-slideover-sidebar,
-html.gpt-theme-enabled #main,
-html.gpt-theme-enabled .bg-token-sidebar-surface-primary,
-html.gpt-theme-enabled .bg-token-main-surface-primary,
-html.gpt-theme-enabled .bg-surface-primary {
+html.skinshift-enabled body,
+html.skinshift-enabled #__next,
+html.skinshift-enabled #root,
+html.skinshift-enabled #main,
+html.skinshift-enabled main,
+html.skinshift-enabled #stage-slideover-sidebar,
+html.skinshift-enabled .bg-token-sidebar-surface-primary,
+html.skinshift-enabled .bg-token-main-surface-primary,
+html.skinshift-enabled .bg-surface-primary {
   background-color: transparent !important;
 }
 
-html.gpt-theme-enabled #stage-slideover-sidebar {
-  backdrop-filter: blur(var(--va-blur));
-  -webkit-backdrop-filter: blur(var(--va-blur));
+html.skinshift-enabled #stage-slideover-sidebar,
+html.skinshift-enabled aside {
+  background: rgba(5, 8, 17, 0.52) !important;
   border-right-color: rgba(255, 255, 255, 0.08) !important;
+  -webkit-backdrop-filter: blur(22px) saturate(1.2);
+  backdrop-filter: blur(22px) saturate(1.2);
 }
 
-html.gpt-theme-enabled #sidebar-header,
-html.gpt-theme-enabled .va-chrome {
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 80 !important;
-  isolation: isolate;
-  background: rgba(12, 10, 18, 0.38) !important;
-  backdrop-filter: blur(24px) saturate(1.45) !important;
-  -webkit-backdrop-filter: blur(24px) saturate(1.45) !important;
-  box-shadow:
-    0 10px 28px rgba(0, 0, 0, 0.22),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+html.skinshift-enabled #sidebar-header {
+  background: rgba(5, 8, 17, 0.7) !important;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(24px) saturate(1.3);
+  backdrop-filter: blur(24px) saturate(1.3);
 }
 
-html.gpt-theme-enabled #sidebar-header::after,
-html.gpt-theme-enabled .va-chrome::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -16px;
-  height: 16px;
-  pointer-events: none;
-  background: linear-gradient(to bottom, rgba(8, 8, 16, 0.35), transparent);
-}
-
-html.gpt-theme-enabled #sidebar-header *,
-html.gpt-theme-enabled .va-chrome * {
-  --sidebar-surface-primary: transparent !important;
-  --main-surface-primary: transparent !important;
-  --bg-primary: transparent !important;
-}
-
-html.gpt-theme-enabled #sidebar-header [class*="bg-"],
-html.gpt-theme-enabled .va-chrome [class*="bg-"],
-html.gpt-theme-enabled #sidebar-header > *,
-html.gpt-theme-enabled .va-chrome > * {
-  background-color: transparent !important;
-}
-
-html.gpt-theme-enabled #thread-bottom-container form,
-html.gpt-theme-enabled .va-composer {
-  background: rgba(8, 12, 24, 0.52) !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+html.skinshift-enabled #thread-bottom-container form,
+html.skinshift-enabled form[data-type="unified-composer"] {
+  background: rgba(7, 11, 23, 0.72) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
   border-radius: 28px !important;
-  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.22), 0 0 28px rgba(167, 107, 255, calc(var(--va-glow) * 0.2));
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3), 0 0 26px var(--ss-accent-soft);
+  -webkit-backdrop-filter: blur(18px) saturate(1.15);
+  backdrop-filter: blur(18px) saturate(1.15);
 }
 
-html.gpt-theme-enabled #thread-bottom-container form textarea,
-html.gpt-theme-enabled .va-composer textarea,
-html.gpt-theme-enabled .va-composer [contenteditable="true"] {
+html.skinshift-enabled #thread-bottom-container form textarea,
+html.skinshift-enabled form[data-type="unified-composer"] textarea,
+html.skinshift-enabled form[data-type="unified-composer"] [contenteditable="true"] {
   background: transparent !important;
 }
 
-html.gpt-theme-enabled .va-send {
-  background: linear-gradient(180deg, #ff72dc, #b24cff) !important;
-  color: #fff !important;
+html.skinshift-enabled [data-testid="send-button"] {
+  background: var(--ss-accent) !important;
+  color: #07101a !important;
+  box-shadow: 0 0 18px var(--ss-accent-soft);
 }
 
-html.gpt-theme-enabled dialog,
-html.gpt-theme-enabled [role="dialog"],
-html.gpt-theme-enabled [role="menu"],
-html.gpt-theme-enabled [role="listbox"],
-html.gpt-theme-enabled [data-radix-dialog-content],
-html.gpt-theme-enabled [data-radix-dropdown-menu-content],
-html.gpt-theme-enabled [data-radix-popper-content-wrapper],
-html.gpt-theme-enabled [data-radix-menu-content] {
-  --bg-primary: #161b28 !important;
-  --main-surface-primary: #161b28 !important;
-  --sidebar-surface-primary: #121722 !important;
-  --bg-elevated-primary: #1c2232 !important;
-  --bg-elevated-secondary: #1c2232 !important;
-  color: #f4f6fb !important;
+html.skinshift-enabled dialog,
+html.skinshift-enabled [role="dialog"],
+html.skinshift-enabled [role="menu"],
+html.skinshift-enabled [role="listbox"],
+html.skinshift-enabled [data-radix-popper-content-wrapper] {
+  --bg-primary: #151a26 !important;
+  --main-surface-primary: #151a26 !important;
+  --sidebar-surface-primary: #111622 !important;
+  --bg-elevated-primary: #1a2030 !important;
+  --bg-elevated-secondary: #1a2030 !important;
+  color: #f5f7fb !important;
 }
 
-html.gpt-theme-enabled dialog,
-html.gpt-theme-enabled [role="dialog"],
-html.gpt-theme-enabled [data-radix-dialog-content] {
-  background: rgba(16, 20, 32, 0.96) !important;
-  backdrop-filter: blur(28px);
-  -webkit-backdrop-filter: blur(28px);
+html.skinshift-enabled dialog,
+html.skinshift-enabled [role="dialog"] {
+  background: rgba(15, 19, 30, 0.97) !important;
+  -webkit-backdrop-filter: blur(26px);
+  backdrop-filter: blur(26px);
 }
 
-html.gpt-theme-enabled [role="menu"],
-html.gpt-theme-enabled [data-radix-dropdown-menu-content],
-html.gpt-theme-enabled [data-radix-menu-content] {
-  background: rgba(18, 22, 34, 0.96) !important;
+html.skinshift-enabled [role="menu"],
+html.skinshift-enabled [role="listbox"] {
+  background: rgba(18, 23, 35, 0.98) !important;
 }
 
-#stage-slideover-sidebar .va-agent-row {
-  border-radius: 16px !important;
-  background: rgba(8, 12, 26, 0.34) !important;
-  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--va-row-accent) 55%, transparent);
-}
-
-#stage-slideover-sidebar .va-agent-row svg {
-  display: none !important;
-}
-
-#stage-slideover-sidebar .va-agent-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  flex: 0 0 28px;
-  border-radius: 999px;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at 30% 25%, color-mix(in srgb, var(--va-row-accent) 90%, white 10%), transparent 46%),
-    radial-gradient(circle at 75% 80%, color-mix(in srgb, var(--va-row-accent) 40%, #14081c), transparent 58%),
-    linear-gradient(160deg, color-mix(in srgb, var(--va-row-accent) 78%, #081018), #09070f);
-  box-shadow:
-    0 0 0 1px color-mix(in srgb, var(--va-row-accent) 60%, transparent),
-    0 0 10px color-mix(in srgb, var(--va-row-accent) 28%, transparent);
-}
-
-#stage-slideover-sidebar .va-agent-avatar {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.55));
-}
-
-#stage-slideover-sidebar .va-agent-sub {
-  display: block;
-  font-size: 10px;
-  line-height: 1.2;
-  color: rgba(255, 255, 255, 0.58);
-  pointer-events: none;
-}
-
-#stage-slideover-sidebar .va-dot {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-right: 5px;
-  border-radius: 999px;
-  background: var(--va-row-accent);
-  vertical-align: middle;
+@media (prefers-reduced-transparency: reduce) {
+  html.skinshift-enabled #stage-slideover-sidebar,
+  html.skinshift-enabled aside,
+  html.skinshift-enabled #thread-bottom-container form,
+  html.skinshift-enabled form[data-type="unified-composer"] {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background: rgba(7, 11, 23, 0.94) !important;
+  }
 }

@@ -1,0 +1,35 @@
+{
+  "$schema": "./schema.json",
+  "themes": [
+    {
+      "id": "nebula",
+      "name": "Nebula",
+      "description": "Deep space in cyan and violet",
+      "wallpaper": "themes/nebula/wallpaper.webp",
+      "mark": "themes/nebula/mark.svg",
+      "accent": "#65dcff",
+      "accentSoft": "rgba(101, 220, 255, 0.24)",
+      "overlay": "rgba(2, 5, 14, 0.43)"
+    },
+    {
+      "id": "neon-vice",
+      "name": "Neon Vice",
+      "description": "Midnight coast in magenta and cyan",
+      "wallpaper": "themes/neon-vice/wallpaper.webp",
+      "mark": "themes/neon-vice/mark.svg",
+      "accent": "#ff65cf",
+      "accentSoft": "rgba(255, 101, 207, 0.23)",
+      "overlay": "rgba(4, 7, 20, 0.5)"
+    },
+    {
+      "id": "noir-signal",
+      "name": "Noir Signal",
+      "description": "Graphite architecture and amber light",
+      "wallpaper": "themes/noir-signal/wallpaper.webp",
+      "mark": "themes/noir-signal/mark.svg",
+      "accent": "#e5ad63",
+      "accentSoft": "rgba(229, 173, 99, 0.2)",
+      "overlay": "rgba(3, 6, 9, 0.42)"
+    }
+  ]
+}
