@@ -6,6 +6,17 @@ It does **not** rebuild ChatGPT. It does not change routing, message sending, or
 
 This project was made **for fun**, with a large contribution from **Grok**. It is unofficial and not affiliated with OpenAI, Rockstar Games, or DC.
 
+## Screenshots
+
+### Nebula
+![Nebula theme](docs/theme-nebula.jpg)
+
+### GTA VI
+![GTA VI theme](docs/theme-gta6.jpg)
+
+### Batman
+![Batman theme](docs/theme-batman.jpg)
+
 ## Features
 
 - Three built-in themes: **Nebula**, **GTA VI**, **Batman**
