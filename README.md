@@ -4,7 +4,7 @@
 
 Open-source visual themes for ChatGPT — local-only, with no tracking, no backend, and no access to your conversations.
 
-[Download the latest release](https://github.com/vlasvar/ChatGptThemeExtension/releases/latest) · [Create a theme](CONTRIBUTING.md) · [Explore more at aislop.gr](https://aislop.gr)
+[Download the latest release](https://github.com/vlasvar/skinshift/releases/latest) · [Create a theme](CONTRIBUTING.md) · [Explore more at aislop.gr](https://aislop.gr)
 
 ![SkinShift Nebula theme](themes/nebula/wallpaper.webp)
 
@@ -27,7 +27,7 @@ ChatGPT is useful. Its default interface does not have to be your only option. S
 
 ### Release download
 
-1. Download `skinshift-v*.zip` from [Releases](https://github.com/vlasvar/ChatGptThemeExtension/releases).
+1. Download `skinshift-v*.zip` from [Releases](https://github.com/vlasvar/skinshift/releases).
 2. Unzip it.
 3. Open `chrome://extensions` or `edge://extensions`.
 4. Enable **Developer mode**.
@@ -64,7 +64,7 @@ Add its colors and asset paths to `themes/themes.json`, then open a pull request
 
 ## Stability
 
-ChatGPT's interface can change without notice. SkinShift uses restrained CSS overrides, but a UI update can still cause visual breakage. Disable the extension and refresh the page if that happens, then file a sanitized [bug report](https://github.com/vlasvar/ChatGptThemeExtension/issues/new/choose).
+ChatGPT's interface can change without notice. SkinShift uses restrained CSS overrides, but a UI update can still cause visual breakage. Disable the extension and refresh the page if that happens, then file a sanitized [bug report](https://github.com/vlasvar/skinshift/issues/new/choose).
 
 ## Project
 
