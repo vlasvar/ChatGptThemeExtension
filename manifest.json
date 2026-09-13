@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "GPT Theme",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Visual themes for ChatGPT. Optional marks on pinned titles and project titles.",
   "permissions": ["storage"],
   "host_permissions": [
