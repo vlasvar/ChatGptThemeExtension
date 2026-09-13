@@ -9,13 +9,13 @@ This project was made **for fun**, with a large contribution from **Grok**. It i
 ## Screenshots
 
 ### Nebula
-![Nebula theme](docs/theme-nebula.jpg)
+![Nebula theme](docs/theme-nebula.png)
 
 ### GTA VI
-![GTA VI theme](docs/theme-gta6.jpg)
+![GTA VI theme](docs/theme-gta6.png)
 
 ### Batman
-![Batman theme](docs/theme-batman.jpg)
+![Batman theme](docs/theme-batman.png)
 
 ## Features
 
