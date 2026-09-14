@@ -15,10 +15,29 @@ const required = [
 
 const readJson = async (file) => JSON.parse(await readFile(path.join(root, file), "utf8"));
 
+const assertFile = async (file, source) => {
+  if (!file || file.includes("*")) return;
+  await access(path.join(root, file)).catch(() => {
+    throw new Error(`${source} references missing file: ${file}`);
+  });
+};
+
 for (const file of required) await access(path.join(root, file));
 
 const manifest = await readJson("manifest.json");
 const registry = await readJson("themes/themes.json");
+
+await assertFile(manifest.action?.default_popup, "action.default_popup");
+for (const [size, icon] of Object.entries(manifest.action?.default_icon || {})) {
+  await assertFile(icon, `action.default_icon.${size}`);
+}
+for (const [size, icon] of Object.entries(manifest.icons || {})) {
+  await assertFile(icon, `icons.${size}`);
+}
+for (const [index, script] of (manifest.content_scripts || []).entries()) {
+  for (const file of script.js || []) await assertFile(file, `content_scripts[${index}].js`);
+  for (const file of script.css || []) await assertFile(file, `content_scripts[${index}].css`);
+}
 
 if (manifest.manifest_version !== 3) throw new Error("manifest_version must be 3");
 if (!/^\d+\.\d+\.\d+$/.test(manifest.version)) throw new Error("Version must use x.y.z format");
@@ -32,7 +51,5 @@ for (const theme of registry.themes) {
   await access(path.join(root, theme.wallpaper));
   await access(path.join(root, theme.mark));
 }
-
-for (const icon of Object.values(manifest.icons || {})) await access(path.join(root, icon));
 
 console.log(`SkinShift ${manifest.version}: ${registry.themes.length} themes validated.`);
