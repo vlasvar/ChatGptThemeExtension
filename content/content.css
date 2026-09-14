@@ -102,8 +102,25 @@ html.skinshift-enabled [role="listbox"] {
 
 html.skinshift-enabled #stage-slideover-sidebar .skinshift-marked-row {
   border-radius: 16px !important;
-  background: rgba(8, 12, 26, 0.34) !important;
-  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ss-row-accent) 55%, transparent);
+  background: rgba(8, 12, 26, 0.22) !important;
+  box-shadow: none !important;
+}
+
+html.skinshift-enabled #stage-slideover-sidebar .skinshift-marked-row:is(
+  [aria-current="page"],
+  [aria-selected="true"],
+  [data-state="active"],
+  [data-active="true"],
+  .active
+),
+html.skinshift-enabled #stage-slideover-sidebar .skinshift-marked-row:has(
+  [aria-current="page"],
+  [aria-selected="true"],
+  [data-state="active"],
+  [data-active="true"],
+  .active
+) {
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ss-row-accent) 55%, transparent) !important;
 }
 
 html.skinshift-enabled #stage-slideover-sidebar .skinshift-marked-row svg {
