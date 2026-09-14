@@ -17,7 +17,7 @@
           "name": { "type": "string", "minLength": 1, "maxLength": 32 },
           "description": { "type": "string", "minLength": 1, "maxLength": 80 },
           "wallpaper": { "type": "string", "pattern": "^themes/.+/wallpaper\\.webp$" },
-          "mark": { "type": "string", "pattern": "^themes/.+/mark\\.svg$" },
+          "mark": { "type": "string", "pattern": "^themes/.+/mark\\.(?:svg|png)$" },
           "accent": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
           "accentSoft": { "type": "string" },
           "overlay": { "type": "string" }

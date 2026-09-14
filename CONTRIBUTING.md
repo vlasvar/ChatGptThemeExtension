@@ -6,7 +6,7 @@ Small, focused pull requests are easiest to review. Bug fixes, selector updates,
 
 1. Create `themes/your-theme/`.
 2. Add `wallpaper.webp` (wide, compressed, and readable behind white text).
-3. Add `mark.svg` (original artwork, square viewBox, no external resources).
+3. Add `mark.png` or `mark.svg` (original square artwork with no external resources).
 4. Add one entry to `themes/themes.json` that conforms to `themes/schema.json`.
 5. Run `node scripts/validate.mjs`.
 6. Test the unpacked extension on `chatgpt.com` in a supported Chromium browser.

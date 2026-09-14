@@ -6,7 +6,9 @@ Open-source visual themes for ChatGPT — local-only, with no tracking, no backe
 
 [Download the latest release](https://github.com/vlasvar/skinshift/releases/latest) · [Create a theme](CONTRIBUTING.md) · [Explore more at aislop.gr](https://aislop.gr)
 
-![SkinShift Nebula theme](themes/nebula/wallpaper.webp)
+![SkinShift product preview](marketing/assets/social-preview-1280x640.png)
+
+This is a product preview, not a simulated browser recording. The safe, sanitized browser demo storyboard is documented in [`marketing/DEMO-CAPTURE.md`](marketing/DEMO-CAPTURE.md).
 
 ## Why SkinShift?
 
@@ -14,6 +16,7 @@ ChatGPT is useful. Its default interface does not have to be your only option. S
 
 - **Three original themes:** Nebula, Neon Vice, and Noir Signal
 - **One-click switching** from a compact extension popup
+- **Two visual modes:** Wallpaper only for the smoothest experience, or Icons + wallpaper for Project/Pinned marks
 - **Privacy by design:** settings remain in local browser storage
 - **Minimal permissions:** `storage` plus access to ChatGPT pages only
 - **Open theme format:** one folder, one registry entry, one pull request
@@ -22,6 +25,10 @@ ChatGPT is useful. Its default interface does not have to be your only option. S
 | Nebula | Neon Vice | Noir Signal |
 |---|---|---|
 | ![Nebula](themes/nebula/wallpaper.webp) | ![Neon Vice](themes/neon-vice/wallpaper.webp) | ![Noir Signal](themes/noir-signal/wallpaper.webp) |
+
+## Launch assets
+
+The `marketing/` folder contains the release notes, Chrome Web Store submission copy, launch kit, social preview, and capture brief. Screenshots and a real browser demo should be captured from a clean, non-personal browser profile before publication.
 
 ## Install
 
@@ -57,7 +64,7 @@ Each theme lives in its own directory:
 themes/
   your-theme/
     wallpaper.webp
-    mark.svg
+    mark.png or mark.svg
 ```
 
 Add its colors and asset paths to `themes/themes.json`, then open a pull request. The validator checks theme IDs, referenced files, icons, and the extension manifest. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full checklist.

@@ -6,7 +6,7 @@
       "name": "Nebula",
       "description": "Deep space in cyan and violet",
       "wallpaper": "themes/nebula/wallpaper.webp",
-      "mark": "themes/nebula/mark.svg",
+      "mark": "themes/nebula/mark.png",
       "accent": "#65dcff",
       "accentSoft": "rgba(101, 220, 255, 0.24)",
       "overlay": "rgba(2, 5, 14, 0.43)"
@@ -16,7 +16,7 @@
       "name": "Neon Vice",
       "description": "Midnight coast in magenta and cyan",
       "wallpaper": "themes/neon-vice/wallpaper.webp",
-      "mark": "themes/neon-vice/mark.svg",
+      "mark": "themes/neon-vice/mark.png",
       "accent": "#ff65cf",
       "accentSoft": "rgba(255, 101, 207, 0.23)",
       "overlay": "rgba(4, 7, 20, 0.5)"
@@ -26,7 +26,7 @@
       "name": "Noir Signal",
       "description": "Graphite architecture and amber light",
       "wallpaper": "themes/noir-signal/wallpaper.webp",
-      "mark": "themes/noir-signal/mark.svg",
+      "mark": "themes/noir-signal/mark.png",
       "accent": "#e5ad63",
       "accentSoft": "rgba(229, 173, 99, 0.2)",
       "overlay": "rgba(3, 6, 9, 0.42)"

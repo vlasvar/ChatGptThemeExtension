@@ -4,6 +4,7 @@
   "short_name": "SkinShift",
   "version": "0.7.0",
   "description": "Open-source visual themes for ChatGPT. Local-only, with no tracking or backend.",
+  "homepage_url": "https://aislop.gr/experiments/skinshift/",
   "permissions": ["storage"],
   "host_permissions": [
     "https://chatgpt.com/*",
@@ -39,7 +40,8 @@
       "resources": [
         "themes/themes.json",
         "themes/*/*.webp",
-        "themes/*/*.svg"
+        "themes/*/*.svg",
+        "themes/*/*.png"
       ],
       "matches": [
         "https://chatgpt.com/*",
