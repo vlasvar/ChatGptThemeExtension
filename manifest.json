@@ -40,7 +40,8 @@
       "resources": [
         "themes/themes.json",
         "themes/*/*.webp",
-        "themes/*/*.svg"
+        "themes/*/*.svg",
+        "themes/*/*.png"
       ],
       "matches": [
         "https://chatgpt.com/*",

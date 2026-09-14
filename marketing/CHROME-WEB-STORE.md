@@ -22,7 +22,7 @@ Local-only visual themes for ChatGPT, with one-click switching and no tracking.
 
 Make ChatGPT yours with SkinShift, an open-source Chrome extension that adds three original visual themes: Nebula, Neon Vice, and Noir Signal.
 
-Choose a theme from the compact popup, enable or pause the styling at any time, and keep using ChatGPT normally. SkinShift only applies packaged CSS and artwork to ChatGPT pages. It does not rebuild ChatGPT, change routing, send messages, access account data, or read conversation content.
+Choose a theme from the compact popup, enable or pause the styling at any time, and choose between Wallpaper only or Icons + wallpaper. The second mode adds original marks and optional accent swatches to Project and Pinned titles, while leaving chats and navigation untouched. SkinShift only applies packaged CSS and artwork to ChatGPT pages. It does not rebuild ChatGPT, change routing, send messages, access account data, or read conversation content.
 
 Privacy is the point: the selected theme and enabled state stay in local browser storage. There is no account, backend, analytics, advertising, remote code, or third-party data transfer.
 

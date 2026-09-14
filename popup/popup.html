@@ -22,6 +22,22 @@
     <main>
       <p class="eyebrow">Choose a theme</p>
       <div id="themes" class="themes" aria-live="polite"></div>
+      <label class="mode-picker" for="sidebarMode">
+        <span>
+          <strong>Sidebar appearance</strong>
+          <small>Choose the smoother wallpaper-only mode or add marks to Projects and Pinned.</small>
+        </span>
+        <select id="sidebarMode">
+          <option value="wallpaper">Wallpaper only</option>
+          <option value="marks">Icons + wallpaper</option>
+        </select>
+      </label>
+      <section id="sidebarMarks" class="sidebar-marks" aria-live="polite">
+        <div class="group-heading"><span>Projects</span><em id="projectCount">0</em></div>
+        <div id="projects" class="project-list"></div>
+        <div class="group-heading"><span>Pinned</span><em id="pinnedCount">0</em></div>
+        <div id="pinned" class="project-list"></div>
+      </section>
       <p id="status" class="status" role="status"></p>
     </main>
 

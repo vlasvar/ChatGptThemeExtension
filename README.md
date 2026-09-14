@@ -16,6 +16,7 @@ ChatGPT is useful. Its default interface does not have to be your only option. S
 
 - **Three original themes:** Nebula, Neon Vice, and Noir Signal
 - **One-click switching** from a compact extension popup
+- **Two visual modes:** Wallpaper only for the smoothest experience, or Icons + wallpaper for Project/Pinned marks
 - **Privacy by design:** settings remain in local browser storage
 - **Minimal permissions:** `storage` plus access to ChatGPT pages only
 - **Open theme format:** one folder, one registry entry, one pull request
@@ -63,7 +64,7 @@ Each theme lives in its own directory:
 themes/
   your-theme/
     wallpaper.webp
-    mark.svg
+    mark.png or mark.svg
 ```
 
 Add its colors and asset paths to `themes/themes.json`, then open a pull request. The validator checks theme IDs, referenced files, icons, and the extension manifest. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full checklist.

@@ -84,7 +84,7 @@ The social preview and three theme assets are ready. A real browser recording an
 
 ## Community-theme invitation
 
-Build a new theme from the existing registry: add `wallpaper.webp` and `mark.svg` under `themes/your-theme/`, add the colors and paths to `themes/themes.json`, run `node scripts/validate.mjs`, and open a pull request. Use original artwork only; do not submit trademarks, copyrighted characters, scraped promotional material, or screenshots containing private conversations.
+Build a new theme from the existing registry: add `wallpaper.webp` and `mark.png` or `mark.svg` under `themes/your-theme/`, add the colors and paths to `themes/themes.json`, run `node scripts/validate.mjs`, and open a pull request. Use original artwork only; do not submit trademarks, copyrighted characters, scraped promotional material, or screenshots containing private conversations.
 
 ## Suggested attachments
 
